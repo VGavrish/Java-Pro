@@ -3,6 +3,7 @@ package HomeWork9;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -32,8 +33,8 @@ public class FileLogger extends Logger {
         File file = new File(configuration.getFilePath());
         String time = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
 
-        try {
-            if (file.length() >= configuration.getMaxSize()) {
+        try (RandomAccessFile randomAccessFile = new RandomAccessFile(file, "rw")) {
+            if (randomAccessFile.length() >= configuration.getMaxSize()) {
                 String newFileName = "Log_" + time + ".txt";
                 File newFile = new File(file.getParent(), newFileName);
                 FileWriter fileWriter = new FileWriter(newFile, true);

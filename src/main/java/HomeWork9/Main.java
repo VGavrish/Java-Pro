@@ -18,6 +18,11 @@ public class Main {
         FileLogger loger = new FileLogger(config);
 
         loger.info("This message is for Info level3");
+        loger.info("This message is for Info level3");
+        loger.debug("This message is for debug level4");
+        loger.debug("This message is for debug level4");
+        loger.debug("This message is for debug level4");
+        loger.debug("This message is for debug level4");
         loger.debug("This message is for debug level4");
     }
 }
