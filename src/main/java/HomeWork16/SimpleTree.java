@@ -17,10 +17,10 @@ public class SimpleTree {
         if (current == null) {
             return new TreeNode(value);
         }
-        if (value < current.value) {
-            current.left = addRecursive(current.left, value);
-        }else if (value > current.value) {
-            current.right = addRecursive(current.right, value);
+        if (value < current.getValue()) {
+            current.setLeft(addRecursive(current.getLeft(), value));
+        }else if (value > current.getValue()) {
+            current.setRight(addRecursive(current.getRight(), value));
         }
         return current;
     }
@@ -31,9 +31,9 @@ public class SimpleTree {
 
     private void traverseInOrder(TreeNode node) {
         if (node != null) {
-            traverseInOrder(node.left);
-            System.out.println(node.value + " ");
-            traverseInOrder(node.right);
+            traverseInOrder(node.getLeft());
+            System.out.println(node.getValue() + " ");
+            traverseInOrder(node.getRight());
         }
     }
 }
