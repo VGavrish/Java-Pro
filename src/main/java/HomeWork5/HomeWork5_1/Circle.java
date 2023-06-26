@@ -1,7 +1,7 @@
-package HomeWork5_0;
+package HomeWork5.HomeWork5_1;
 
 public class Circle implements GeometricFigure {
-    private double radius;
+    private final double radius;
 
     public Circle (double radius) {
         this.radius = radius;

@@ -1,4 +1,4 @@
-package HomeWork14.coffee.order;
+package HomeWork14.CoffeOrder;
 
 public class Order {
     private int order;

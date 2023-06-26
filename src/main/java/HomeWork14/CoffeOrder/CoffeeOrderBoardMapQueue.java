@@ -1,4 +1,4 @@
-package HomeWork14.coffee.order;
+package HomeWork14.CoffeOrder;
 
 import java.util.HashMap;
 import java.util.LinkedList;

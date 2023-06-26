@@ -1,8 +1,8 @@
-package HomeWork5_1;
+package HomeWork5.HomeWork5_2;
 
 public class Wall implements Obstacle {
     private int Height;
-    private String name;
+    private final String name;
 
     @Override
     public String getName() {

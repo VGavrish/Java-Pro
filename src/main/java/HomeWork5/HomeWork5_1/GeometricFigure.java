@@ -1,4 +1,4 @@
-package HomeWork5_0;
+package HomeWork5.HomeWork5_1;
 
 public interface GeometricFigure {
 

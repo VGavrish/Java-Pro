@@ -1,4 +1,4 @@
-package HomeWork5_1;
+package HomeWork5.HomeWork5_2;
 
 public class RunningTrack implements Obstacle{
     private String name;

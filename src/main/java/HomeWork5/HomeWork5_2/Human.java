@@ -1,11 +1,11 @@
-package HomeWork5_1;
+package HomeWork5.HomeWork5_2;
 
-public class Robot implements Participant {
+public class Human implements Participant {
     private String name;
     private int maxRunDistance;
     private int maxJumpHeight;
 
-    public Robot(String name, int maxRunDistance, int maxJumpHeight) {
+    Human (String name, int maxRunDistance, int maxJumpHeight) {
         this.name = name;
         this.maxRunDistance = maxRunDistance;
         this.maxJumpHeight = maxJumpHeight;
@@ -22,11 +22,6 @@ public class Robot implements Participant {
     }
 
     @Override
-    public int getMaxRunDistance() {
-        return maxRunDistance;
-    }
-
-    @Override
     public String getName() {
         return name;
     }
@@ -35,6 +30,10 @@ public class Robot implements Participant {
         this.name = name;
     }
 
+    @Override
+    public int getMaxRunDistance() {
+        return maxRunDistance;
+    }
 
     public void setMaxRunDistance(int maxRunDistance) {
         this.maxRunDistance = maxRunDistance;
@@ -48,6 +47,4 @@ public class Robot implements Participant {
     public void setMaxJumpHeight(int maxJumpHeight) {
         this.maxJumpHeight = maxJumpHeight;
     }
-
-
 }

@@ -1,8 +1,8 @@
-package HomeWork5_0;
+package HomeWork5.HomeWork5_1;
 
 public class Triangle implements GeometricFigure {
-    private double base;
-    private double height;
+    private final double base;
+    private final double height;
 
     public Triangle (double base, double height) {
         this.base=base;

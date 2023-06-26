@@ -1,4 +1,7 @@
-package HomeWork14.coffee.order;
+package HomeWork14;
+
+import HomeWork14.CoffeOrder.Order;
+import HomeWork14.CoffeOrder.CoffeeOrderBoardMapQueue;
 
 public class Main {
     public static void main(String[] args) {

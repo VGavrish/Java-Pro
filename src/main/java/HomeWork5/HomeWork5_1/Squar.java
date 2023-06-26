@@ -1,7 +1,7 @@
-package HomeWork5_0;
+package HomeWork5.HomeWork5_1;
 
 public class Squar implements GeometricFigure {
-    private double side;
+    private final double side;
 
     public Squar (double side) {
         this.side=side;

@@ -1,11 +1,11 @@
-package HomeWork5_1;
+package HomeWork5.HomeWork5_2;
 
-public class Cat implements Participant {
+public class Robot implements Participant {
     private String name;
     private int maxRunDistance;
     private int maxJumpHeight;
 
-    public Cat(String name, int maxRunDistance, int maxJumpHeight) {
+    public Robot(String name, int maxRunDistance, int maxJumpHeight) {
         this.name = name;
         this.maxRunDistance = maxRunDistance;
         this.maxJumpHeight = maxJumpHeight;
@@ -19,12 +19,6 @@ public class Cat implements Participant {
     @Override
     public void jump() {
         System.out.println(this.name + " стрибає");
-
-    }
-
-    @Override
-    public String getName() {
-        return name;
     }
 
     @Override
@@ -33,7 +27,27 @@ public class Cat implements Participant {
     }
 
     @Override
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    public void setMaxRunDistance(int maxRunDistance) {
+        this.maxRunDistance = maxRunDistance;
+    }
+
+    @Override
     public int getMaxJumpHeight() {
         return maxJumpHeight;
     }
+
+    public void setMaxJumpHeight(int maxJumpHeight) {
+        this.maxJumpHeight = maxJumpHeight;
+    }
+
+
 }
