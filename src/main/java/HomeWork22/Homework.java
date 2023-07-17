@@ -1,8 +1,8 @@
 package HomeWork22;
 
 public class Homework {
-    private String name;
-    private String description;
+    private final String name;
+    private final String description;
 
     public Homework(String name, String description) {
         this.name = name;
@@ -15,5 +15,13 @@ public class Homework {
 
     public String getDescription() {
         return description;
+    }
+
+    @Override
+    public String toString() {
+        return "Homework{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

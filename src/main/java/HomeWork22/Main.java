@@ -9,12 +9,18 @@ public class Main {
         LessonDao lessonDao = new LessonDao(dataBaseConnection);
 
         try {
-            Homework homework = new Homework("Math homework", "Complite exercises 1-5");
+            Homework homework = new Homework("Math homework", "Complete exercises 1-5");
             Lesson lesson = new Lesson("Math lesson", homework);
 
             lessonDao.addLesson(lesson);
 
             System.out.println(lesson.getHomework());
+
+            lessonDao.deleteLesson(1);
+
+            lessonDao.getLessonById(2);
+
+            lessonDao.getAllLessons();
 
         } catch (SQLException e) {
             e.printStackTrace();
